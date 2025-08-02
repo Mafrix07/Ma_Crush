@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style.css" />
+    <title>Ma Crush </title>
+</head>
+<body>
+    <header class="intro">
+        <h1 class="intro-message">Je vous présente ma Crush </h1>
+    </header>
+
+    <main>
+        <section class="why-love">
+            <h2 class="centered">Pourquoi c'est elle que mon coeur a choisit ?</h2>
+            <div class="videos">
+                <article class="video-container">
+                    <video class="video" src="Ben1.mp4" autoplay loop muted title="Elle est trop classe"></video>
+                    <div class="caption">Elle est trop classe</div>
+                </article>
+                <article class="video-container">
+                    <video class="video" src="Ben1.mp4" autoplay loop muted title="Elle est trop belle"></video>
+                    <div class="caption">Elle est trop belle</div>
+                </article>
+                <article class="video-container">
+                    <video class="video" src="Ben3.mp4" autoplay loop muted title="Elle sait faire semblant de danser"></video>
+                    <div class="caption">Elle sait faire semblant de danser</div>
+                </article>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “L’amour ne se regarde pas, il se vit...” 💞
+        </blockquote>
+
+        <section class="fav-songs">
+            <h2 class="centered">Ses Musiques Préférées</h2>
+            <div class="playlist">
+                <div class="player">
+                    <p id="current-track">🎶 Sélectionnez une chanson 🎶</p>
+                    <audio id="audio" controls></audio>
+                </div>
+                <div class="track" onclick="playTrack('Ch1.mp3', 'Lewis Capaldi - Pointless')">
+                    🎵 Sa Chanson Préférée 1
+                </div>
+                <div class="track" onclick="playTrack('Ch2.mp3', 'Dinos - Helsinki')">
+                    🎵 Sa Chanson Préférée 2
+                </div>
+                <div class="track" onclick="playTrack('Ch3.mp3', 'Damso - Grand Soleil ')">
+                    🎵 Sa Chanson Préférée 3
+                </div>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “La vraie beauté est dans le cœur de celle qu’on aime.” 💗
+        </blockquote>
+
+        <section class="fav-foods">
+            <h2 class="centered">Ses Plats Préférés</h2>
+            <div class="dishes">
+                <figure class="dish">
+                    <img src="Attieke.jpeg" alt="Attiéké" class="dish-img" />
+                    <figcaption>Attieke</figcaption>
+                </figure>
+                <figure class="dish">
+                    <img src="ayimolou.jpg" alt="ayimolou" class="dish-img" />
+                    <figcaption>ayimolou</figcaption>
+                </figure>
+                <figure class="dish">
+                    <img src="spaghetti.jpeg" alt="spaghetti" class="dish-img" />
+                    <figcaption>spaghetti</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “Ton sourire est ma lumière préférée.” ✨
+        </blockquote>
+<!--   
+        <section class="love-letter">
+            <h2 class="centered">Lettre d’amour</h2>
+            <div class="envelope">
+                <button id="toggle-message" class="glow">OUVREZ MOI !</button>
+                <div id="friendship-message" class="love-message hidden">
+                    On parle souvent de l'amour de sa vie, de la personne qu'on attend pour tout bouleverser... Mais en 2021, ce n’est pas l’amour que j’ai rencontré. C’est bien plus rare, bien plus vrai : j’ai rencontré **une amie exceptionnelle**.<br><br>
+                    Une jeune fille belle, intelligente, pleine de vie... et tellement sexy qu’elle aurait pu être une tentation. Et pourtant, elle est devenue quelque chose d'encore plus précieux. Je ne savais pas à ce moment-là qu’elle allait me faire **goûter à l’amitié sincère**, celle qui ne triche pas, qui ne juge pas, qui te soutient même quand tout vacille.<br><br>
+                    Avec elle, j’ai découvert qu’une vraie amitié entre un homme et une femme, ça existe. Elle est cette lumière douce qui rend mes journées plus belles, ce regard qui comprend sans avoir besoin de parler, ce sourire qui répare les blessures silencieuses. <br><br>
+                    Elle n’est pas juste une amie. Elle est **mon repère, mon calme, ma vérité**. On ne partage peut-être pas de promesses d’amour éternel, mais ce qu’on partage vaut tout l’or du monde : **une confiance brute, une complicité rare, et des souvenirs qui collent au cœur**.<br><br>
+                    Alors merci à toi, ma meilleure amie. Merci d’être entrée dans ma vie sans prévenir. Merci pour ta force, ton humour, ta sincérité et ta beauté – oui, ta beauté dans toutes ses formes. <br><br>
+                    Ce message, c’est mon hommage à **toi**, et à cette forme d’amour que les gens oublient trop souvent : l’amitié vraie. Celle qui ne fait pas de bruit, mais qui change tout. 💛
+                </div>
+                <div class="envelope">
+            <button id="toggle-message" class="glow">OUVREZ MOI !</button>
+            <div id="love-message" class="love-message hidden">
+                On parle souvent de l'amour de sa vie, de la personne qu'on attend pour tout bouleverser... Mais en 2021, ce n’est pas l’amour que j’ai rencontré. C’est bien plus rare, bien plus vrai : j’ai rencontré <strong>une amie exceptionnelle</strong>.<br><br>
+                Une jeune fille belle, intelligente, pleine de vie... et tellement sexy qu’elle aurait pu être une tentation. Et pourtant, elle est devenue quelque chose d'encore plus précieux. Je ne savais pas à ce moment-là qu’elle allait me faire <strong>goûter à l’amitié sincère</strong>, celle qui ne triche pas, qui ne juge pas, qui te soutient même quand tout vacille.<br><br>
+                Avec elle, j’ai découvert qu’une vraie amitié entre un homme et une femme, ça existe. Elle est cette lumière douce qui rend mes journées plus belles, ce regard qui comprend sans avoir besoin de parler, ce sourire qui répare les blessures silencieuses.<br><br>
+                Elle n’est pas juste une amie. Elle est <strong>mon repère, mon calme, ma vérité</strong>. On ne partage peut-être pas de promesses d’amour éternel, mais ce qu’on partage vaut tout l’or du monde : <strong>une confiance brute, une complicité rare, et des souvenirs qui collent au cœur</strong>.<br><br>
+                Alors merci à toi, ma meilleure amie. Merci d’être entrée dans ma vie sans prévenir. Merci pour ta force, ton humour, ta sincérité et ta beauté – oui, ta beauté dans toutes ses formes.<br><br>
+                Ce message, c’est mon hommage à <strong>toi</strong>, et à cette forme d’amour que les gens oublient trop souvent : l’amitié vraie. Celle qui ne fait pas de bruit, mais qui change tout. 💛
+            </div>
+        </div>
+        </section> -->
+        <div class="envelope">
+            <button id="toggle-message" class="glow">Ouvrez moi !</button>
+            <div id="love-message" class="love-message hidden">
+                    Il y a des rencontres qui bouleversent une vie. La tienne a été un tournant, une lumière douce venue éclairer mes jours. Depuis que tu es entrée dans ma vie, chaque instant a une saveur différente, plus profonde, plus vraie. Tu es bien plus qu’un simple amour. Tu es mon repère, ma force, mon inspiration. Ton rire, ton regard, ta façon d’être... tout en toi me rappelle pourquoi la vie mérite d’être vécue pleinement. Ce message n’est pas une déclaration isolée : c’est un engagement. Celui de te respecter, de te soutenir, et de toujours chercher à mériter la place que tu occupes dans ma vie. Merci d’être celle que tu es. Merci pour ton élégance, ta bonne humeur(vraiment ta bonne humeur) , ta beauté – intérieure comme extérieure. Merci d’exister. Je suis profondément chanceux de partager ce chemin avec toi. Et à ceux qui lisent ce message : sachez que derrière ces mots se cache une histoire, une vraie. Celle de deux personnes qui ont choisi, chaque jour, de s’aimer sincèrement. 💜
+
+                    <h3>Ton Crush Mario</h3>
+        
+            </div>
+        
+        <section class="time-together">
+            <h2 class="centered">Temps passé ensemble</h2>
+            <div class="countdown">
+                <p id="countdown"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
